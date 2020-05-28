@@ -44,7 +44,11 @@ namespace WindowsFormsApp2
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola: " + this.txtApellidos.Text + " " + this.txtNombre);
+            //estructura secuencial
+            String saludo = " ";//Cadena de caracteres
+            saludo=this.txtNombre.Text+ " " + this.txtApellidos.Text;
+
+            MessageBox.Show("Hola: " + saludo);
         }
     }
 }
