@@ -77,7 +77,6 @@
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(236, 22);
             this.txtApellidos.TabIndex = 3;
-            this.txtApellidos.Text = "r";
             // 
             // txtNombre
             // 
@@ -104,6 +103,7 @@
             this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtResultado.Size = new System.Drawing.Size(524, 198);
             this.txtResultado.TabIndex = 6;
+            this.txtResultado.TabStop = false;
             this.txtResultado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FrmDatosPersonales
