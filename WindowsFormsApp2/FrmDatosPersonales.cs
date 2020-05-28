@@ -65,12 +65,20 @@ namespace WindowsFormsApp2
                 aux = aux + "a menor que  b";
 
             this.txtResultado.Text = aux;
-
+            this.getsaludos(saludo);//llama a la funcion 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
            
+        }
+        //Procedimientos - funciones 
+        //Las funciones devuelven valores
+        //el procedimeinto es una funcion que no devuelve valor
+        void getsaludos(string nombres){
+            this.Nombres.Text = "Uso de funcion que no devueve valor(" + nombres + ")";
+
+
         }
     }
 }

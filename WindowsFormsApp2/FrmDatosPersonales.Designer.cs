@@ -35,6 +35,7 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.Nombres = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -106,11 +107,22 @@
             this.txtResultado.TabStop = false;
             this.txtResultado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // Nombres
+            // 
+            this.Nombres.AccessibleName = "lblnombres";
+            this.Nombres.AutoSize = true;
+            this.Nombres.Location = new System.Drawing.Point(36, 414);
+            this.Nombres.Name = "Nombres";
+            this.Nombres.Size = new System.Drawing.Size(91, 17);
+            this.Nombres.TabIndex = 7;
+            this.Nombres.Text = "Lord Shadow";
+            // 
             // FrmDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Nombres);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtNombre);
@@ -134,5 +146,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.Label Nombres;
     }
 }
