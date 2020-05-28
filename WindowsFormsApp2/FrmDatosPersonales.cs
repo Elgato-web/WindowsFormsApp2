@@ -49,6 +49,37 @@ namespace WindowsFormsApp2
             saludo=this.txtNombre.Text+ " " + this.txtApellidos.Text;
 
             MessageBox.Show("Hola: " + saludo);
+            // estructuras repetitivas 
+            for(int i=1; i<=10; i++)
+            {
+                saludo = saludo + System.Environment.NewLine;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //estructura secuencial
+            String saludo = " ";//Cadena de caracteres
+            
+            saludo = this.txtNombre.Text + " " + this.txtApellidos.Text;
+
+            MessageBox.Show("Hola: " + saludo);
+            // estructuras repetitivas 
+            string aux = " ";
+            for (int i = 1; i <= 10; i++)
+            {
+                aux += saludo  + System.Environment.NewLine ;
+            }
+            this.txtResultado.Text = aux;
+            //estructuras selectivas (condicionales)
+            int a = 100;
+            int b = 20;
+            if (a > b)
+                aux = aux + "a mayo b";
+            else
+                aux = aux + "a menor b";
+
+            this.txtResultado.Text = aux;
         }
     }
 }

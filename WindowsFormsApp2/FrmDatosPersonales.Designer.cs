@@ -34,6 +34,7 @@
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -41,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(36, 35);
+            this.label1.Location = new System.Drawing.Point(51, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(308, 17);
             this.label1.TabIndex = 0;
@@ -76,6 +77,7 @@
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(236, 22);
             this.txtApellidos.TabIndex = 3;
+            this.txtApellidos.Text = "r";
             // 
             // txtNombre
             // 
@@ -86,7 +88,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(39, 210);
+            this.btnAceptar.Location = new System.Drawing.Point(615, 122);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(122, 38);
             this.btnAceptar.TabIndex = 5;
@@ -94,11 +96,22 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
             // 
+            // txtResultado
+            // 
+            this.txtResultado.Location = new System.Drawing.Point(71, 203);
+            this.txtResultado.Multiline = true;
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtResultado.Size = new System.Drawing.Size(524, 198);
+            this.txtResultado.TabIndex = 6;
+            this.txtResultado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // FrmDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtApellidos);
@@ -120,5 +133,6 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtResultado;
     }
 }
