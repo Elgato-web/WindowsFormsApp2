@@ -80,5 +80,34 @@ namespace WindowsFormsApp2
 
 
         }
-    }
+        void ejemploporvalor (int x)
+        {
+            x = x + 5;
+            MessageBox.Show("El nuevo valor de x: " + x.ToString());
+                }
+           
+                
+        void ejemploporreferencia (ref int a)
+        {//la funcion recibe la variable original (direccion de memoria )//cualquier cambio en esta variable se refleja en la original
+            a = a + 100;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int x = 5;
+            int y = 200;
+            //ejemplopasoporvalor(x);
+            // ejemploporreferencia(ref x);
+            //this.txtvalor.Text = x.ToString();
+            ejemploporParametrosOpcionales(20, y);
+            this.txtvalor.Text = x.ToString();
+
+        }
+        //paso de parametros opcionales
+        void ejemploporParametrosOpcionales(int x, int y=10)
+        {
+            x = x + y;
+            MessageBox.Show("Parametro Opcional " + y.ToString());
+            MessageBox.Show("El nuevo de valor de x " + x.ToString());
+        }
+}
 }

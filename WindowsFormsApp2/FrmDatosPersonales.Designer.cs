@@ -36,6 +36,8 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.Nombres = new System.Windows.Forms.Label();
+            this.txtvalor = new System.Windows.Forms.TextBox();
+            this.btnpasoporvalor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -117,11 +119,30 @@
             this.Nombres.TabIndex = 7;
             this.Nombres.Text = "Lord Shadow";
             // 
+            // txtvalor
+            // 
+            this.txtvalor.Location = new System.Drawing.Point(615, 203);
+            this.txtvalor.Name = "txtvalor";
+            this.txtvalor.Size = new System.Drawing.Size(152, 22);
+            this.txtvalor.TabIndex = 8;
+            // 
+            // btnpasoporvalor
+            // 
+            this.btnpasoporvalor.Location = new System.Drawing.Point(615, 243);
+            this.btnpasoporvalor.Name = "btnpasoporvalor";
+            this.btnpasoporvalor.Size = new System.Drawing.Size(144, 28);
+            this.btnpasoporvalor.TabIndex = 9;
+            this.btnpasoporvalor.Text = "Paso por valor";
+            this.btnpasoporvalor.UseVisualStyleBackColor = true;
+            this.btnpasoporvalor.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnpasoporvalor);
+            this.Controls.Add(this.txtvalor);
             this.Controls.Add(this.Nombres);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnAceptar);
@@ -147,5 +168,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Label Nombres;
+        private System.Windows.Forms.TextBox txtvalor;
+        private System.Windows.Forms.Button btnpasoporvalor;
     }
 }
