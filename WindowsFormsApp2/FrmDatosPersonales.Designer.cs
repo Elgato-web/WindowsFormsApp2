@@ -76,21 +76,21 @@
             // txtApellidos
             // 
             this.txtApellidos.AccessibleName = "txt";
-            this.txtApellidos.Location = new System.Drawing.Point(330, 82);
+            this.txtApellidos.Location = new System.Drawing.Point(365, 82);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(236, 22);
             this.txtApellidos.TabIndex = 3;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(330, 138);
+            this.txtNombre.Location = new System.Drawing.Point(365, 138);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(236, 22);
             this.txtNombre.TabIndex = 4;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(615, 122);
+            this.btnAceptar.Location = new System.Drawing.Point(202, 100);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(122, 38);
             this.btnAceptar.TabIndex = 5;
@@ -100,11 +100,11 @@
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(71, 203);
+            this.txtResultado.Location = new System.Drawing.Point(12, 203);
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResultado.Size = new System.Drawing.Size(524, 198);
+            this.txtResultado.Size = new System.Drawing.Size(487, 198);
             this.txtResultado.TabIndex = 6;
             this.txtResultado.TabStop = false;
             this.txtResultado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -121,14 +121,14 @@
             // 
             // txtvalor
             // 
-            this.txtvalor.Location = new System.Drawing.Point(615, 203);
+            this.txtvalor.Location = new System.Drawing.Point(497, 331);
             this.txtvalor.Name = "txtvalor";
             this.txtvalor.Size = new System.Drawing.Size(152, 22);
             this.txtvalor.TabIndex = 8;
             // 
             // btnpasoporvalor
             // 
-            this.btnpasoporvalor.Location = new System.Drawing.Point(615, 243);
+            this.btnpasoporvalor.Location = new System.Drawing.Point(505, 373);
             this.btnpasoporvalor.Name = "btnpasoporvalor";
             this.btnpasoporvalor.Size = new System.Drawing.Size(144, 28);
             this.btnpasoporvalor.TabIndex = 9;
