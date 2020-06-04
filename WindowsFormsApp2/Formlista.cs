@@ -58,5 +58,10 @@ namespace WindowsFormsApp2
                 }
             }
         }
+
+        private void lstNombres_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,6 +60,7 @@
             this.btnconvertir.TabIndex = 1;
             this.btnconvertir.Text = "Convertir en Binario";
             this.btnconvertir.UseVisualStyleBackColor = true;
+            this.btnconvertir.Click += new System.EventHandler(this.btnconvertir_Click);
             // 
             // txtnumero
             // 
@@ -84,6 +85,7 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Equivalente Binario";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // checkBox1
             // 
@@ -93,6 +95,7 @@
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 

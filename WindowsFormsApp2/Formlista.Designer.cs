@@ -73,6 +73,7 @@
             this.lstNombres.Name = "lstNombres";
             this.lstNombres.Size = new System.Drawing.Size(314, 196);
             this.lstNombres.TabIndex = 3;
+            this.lstNombres.SelectedIndexChanged += new System.EventHandler(this.lstNombres_SelectedIndexChanged);
             // 
             // Formlista
             // 
