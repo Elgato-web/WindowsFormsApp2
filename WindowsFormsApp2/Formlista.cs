@@ -24,11 +24,11 @@ namespace WindowsFormsApp2
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            string nombre;
-            string pulso = " ";
-            nombre = this.txtnombre.Text;
-                pulso += nombre + System.Environment.NewLine;
-            this.lstNombres.Items.Add(pulso);
+            if (this.txtnombre.Text.Length > 0)
+            {
+                this.lstNombres.Items.Add(this.txtnombre.Text);
+                this.txtnombre.Text = "";
+            }
         }
 
         private void text_TextChanged(object sender, EventArgs e)
@@ -43,15 +43,7 @@ namespace WindowsFormsApp2
 
         private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-
-                string nombre;
-            string pulso = " ";
-            nombre = this.txtnombre.Text;
-                pulso += nombre + System.Environment.NewLine;
-            this.lstNombres.Items.Add(pulso);
-            }
+            
 
         }
 
