@@ -109,5 +109,10 @@ namespace WindowsFormsApp2
             MessageBox.Show("Parametro Opcional " + y.ToString());
             MessageBox.Show("El nuevo de valor de x " + x.ToString());
         }
-}
+
+        private void txtApellidos_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
