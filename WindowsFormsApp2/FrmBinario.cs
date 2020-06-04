@@ -59,8 +59,19 @@ namespace WindowsFormsApp2
                 return;//Abandonar ejecución
             }
 
-            int num =int.Parse( this.txtnumero.Text);
-            binario(num);
+            
+            if (int.TryParse(txtnumero.Text, out int numero)) { 
+              
+                if(numero >=0 && numero <= 255)
+                  binario(numero);
+                else
+                    MessageBox.Show("Numero fuera de rango...");
+            }
+            else
+            {
+                MessageBox.Show("Debe Ingresar solo valores numericos...");
+            }
+            
 
         }
 
