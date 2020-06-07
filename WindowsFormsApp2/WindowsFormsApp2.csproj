@@ -64,6 +64,12 @@
     <Compile Include="FrmDatosPersonales.Designer.cs">
       <DependentUpon>FrmDatosPersonales.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNumerosEnteros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNumerosEnteros.Designer.cs">
+      <DependentUpon>FrmNumerosEnteros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formlista.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDatosPersonales.resx">
       <DependentUpon>FrmDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNumerosEnteros.resx">
+      <DependentUpon>FrmNumerosEnteros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

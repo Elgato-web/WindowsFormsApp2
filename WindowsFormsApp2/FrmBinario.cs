@@ -79,5 +79,10 @@ namespace WindowsFormsApp2
         {
             
         }
+
+        private void txtnumero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
